@@ -1,0 +1,35 @@
+.profile-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ajuste les boutons horizontalement */
+    align-items: center;
+    width: 60%; /* Définissez une largeur pour le conteneur */
+}
+
+.button-container button {
+    flex: 1 1 45%; /* Chaque bouton prend environ 45% de l'espace, ajusté pour deux par ligne */
+    margin: 10px; /* Espacement uniforme */
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #f8f8f8;
+    border: 2px solid #315cfd;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #315cfd;
+    color: white;
+}

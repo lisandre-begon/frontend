@@ -1,0 +1,93 @@
+
+.recipe-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5dc;
+
+  .header {
+    background-color: #f8f8f8;
+    padding: 10px;
+
+    .recipe-title {
+      margin: 0;
+      font-size: 1.5em;
+      text-align: left;
+      color: black;  // Changer la couleur de l'écriture en noir
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px solid #fff;
+
+    .image {
+      flex: 1;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    .details {
+      flex: 2;
+      padding: 10px;
+
+      .tabs {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+
+        button {
+          flex: 1;
+          padding: 10px;
+          border: none;
+          background-color: #f8f8f8;
+          cursor: pointer;
+          color: black;  // Changer la couleur de l'écriture en noir
+
+          &.active {
+            background-color: #ddd;
+            font-weight: bold;
+          }
+
+          &:hover {
+            background-color: #f8f8f8;  // Enlever l'effet hover
+          }
+        }
+      }
+
+      .tab-content {
+        p {
+          margin: 0;
+          color: black;  // Changer la couleur de l'écriture en noir
+        }
+
+        ul {
+          list-style-type: none;
+          padding: 0;
+
+          li {
+            margin-bottom: 5px;
+            color: black;  // Changer la couleur de l'écriture en noir
+          }
+        }
+      }
+    }
+  }
+}
+
+body {
+  overflow: auto;
+  margin-top: 0;  // Ajouter une marge pour éviter le décalage de la première recette
+  padding-top: 20px;
+}
+
+.recipe-card:first-child {
+  margin-top: 0;
+}
